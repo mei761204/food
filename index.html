@@ -110,38 +110,45 @@
             font-weight: 600;
         }
 
-        .hover {
-            display: none;
-            transition: 1s;
-        }
-
-        .deep:hover .hover {
+        .deep:hover .vertical_box {
             display: block;
-            transition: 1s;
+            transition: 0.5s;
         }
 
-        .hover_02 {
-            display: flex;
-            flex-direction: column;
-            width: 114px;
-            height: 116px;
-            background-color: white;
+        .vertical_box {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 150px;
+            background-color: #f1f1f1;
+            display: none;
             position: absolute;
-            padding-left: 12px;
-            padding-top: 8px;
-            z-index: 2;
-            transition: 1s;
         }
 
-        .FB_01 {
-            border-width: 1px;
-            border-bottom-style: dashed;
+        .vertical a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
         }
 
-        .FB {
-            margin-top: 13px;
-            border-width: 1px;
-            border-bottom-style: dashed;
+        .vertical a:hover {
+            background-color: #555;
+            color: white;
+            transition: all .5s;
+        }
+
+        .vertical a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .vertical a:hover {
+            background-color: rgba(100, 100, 100, 0.85);
+            color: white;
+            transition: all .8s;
         }
 
         .sidenav {
@@ -2376,15 +2383,11 @@
                     <!-- 以下是深入了解導覽列 -->
                     <li class="dropDown">
                         <a href="#0">深入了解 </a>
-                        <div class="hover">
-                            <div class="hover_02">
-                                <a href="https://www.facebook.com/%E4%B8%8D%E5%8F%AA%E5%A5%BD%E9%A3%9F-108298397747893/"
-                                    target="_blank" class="FB_01">FB粉絲團</a>
-                                <a href="https://www.facebook.com/%E4%B8%8D%E5%8F%AA%E5%A5%BD%E9%A3%9F-108298397747893/"
-                                    target="_blank" class="FB">FB好物社團</a>
-                                <a href="#flag5" class="FB">營業資訊</a>
-                            </div>
-                        </div>
+                        <ul class="vertical_box">
+                            <li class="vertical"><a href="https://www.facebook.com/%E4%B8%8D%E5%8F%AA%E5%A5%BD%E9%A3%9F-108298397747893/" target="_blank">FB粉絲團</a></li>
+                            <li class="vertical"><a href="https://www.facebook.com/groups/notonlygoodfood" target="_blank">FB好物社團</a></li>
+                            <li class="vertical"><a href="#flag5">營業資訊</a></li>
+                        </ul>
                     </li>
                 </div>
             </ul>
