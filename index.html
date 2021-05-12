@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>不知好食</title>
+    <title>不只好食</title>
     <!-- 自己的css -->
     <link rel="stylesheet" href="css/index.css">
     <!-- swiper的css -->
@@ -78,6 +78,7 @@
             position: fixed;
             top: 0;
             z-index: 100;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 12%);
         }
 
         .nav_logo {
@@ -109,30 +110,45 @@
             font-weight: 600;
         }
 
-        .hover {
-            display: none;
-            transition: 1s;
-        }
-
-        .deep:hover .hover {
+        .deep:hover .vertical_box {
             display: block;
-            transition: 1s;
+            transition: 0.5s;
         }
 
-        .hover_02 {
-            display: flex;
-            flex-direction: column;
-            width: 115px;
-            height: 100px;
-            background-color: white;
+        .vertical_box {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 150px;
+            background-color: #f1f1f1;
+            display: none;
             position: absolute;
-            padding-left: 20px;
-            z-index: 2;
-            transition: 1s;
         }
 
-        .FB {
-            margin-top: 15px;
+        .vertical a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .vertical a:hover {
+            background-color: #555;
+            color: white;
+            transition: all .5s;
+        }
+
+        .vertical a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .vertical a:hover {
+            background-color: rgba(100, 100, 100, 0.85);
+            color: white;
+            transition: all .8s;
         }
 
         .sidenav {
@@ -235,6 +251,7 @@
             position: relative;
             top: -80px;
         }
+
         #we {
             width: 100%;
             height: 700px;
@@ -726,6 +743,7 @@
             background-size: contain;
             background-repeat: no-repeat;
         }
+
         .mask {
             display: flex;
             flex-direction: column;
@@ -766,7 +784,7 @@
             }
         }
 
- 
+
 
         .mask_title {
             font-size: 30px;
@@ -1342,7 +1360,7 @@
 
             /* 以下是相遇．緣分文字 */
             .occur {
-                width: 280px;
+                width: 292px;
                 height: 300px;
                 left: 75px;
                 top: 0px;
@@ -2178,7 +2196,7 @@
             .first_img {
                 width: 300px;
             }
-            
+
 
             .second_img {
                 width: 300px;
@@ -2248,7 +2266,6 @@
                 height: 605px;
                 align-items: center;
                 flex-direction: column-reverse;
-                align-items: flex-start;
             }
 
             .thooughr_Text {
@@ -2363,15 +2380,11 @@
                     <!-- 以下是深入了解導覽列 -->
                     <li class="dropDown">
                         <a href="#0">深入了解 </a>
-                        <div class="hover">
-                            <div class="hover_02">
-                                <a href="https://www.facebook.com/%E4%B8%8D%E5%8F%AA%E5%A5%BD%E9%A3%9F-108298397747893/"
-                                    target="_blank" class="FB_01">FB粉絲團</a>
-                                <a href="https://www.facebook.com/%E4%B8%8D%E5%8F%AA%E5%A5%BD%E9%A3%9F-108298397747893/"
-                                    target="_blank" class="FB">FB好物社團</a>
-                                <a href="#flag5" class="FB">營業資訊</a>
-                            </div>
-                        </div>
+                        <ul class="vertical_box">
+                            <li class="vertical"><a href="https://www.facebook.com/%E4%B8%8D%E5%8F%AA%E5%A5%BD%E9%A3%9F-108298397747893/" target="_blank">FB粉絲團</a></li>
+                            <li class="vertical"><a href="https://www.facebook.com/groups/notonlygoodfood" target="_blank">FB好物社團</a></li>
+                            <li class="vertical"><a href="#flag5">營業資訊</a></li>
+                        </ul>
                     </li>
                 </div>
             </ul>
@@ -2552,7 +2565,7 @@
                                     <div class="menu_box">
                                         <div class="dishes">點心/湯品</div>
                                         <h3 class="menu menue01"><br>點心：波浪脆薯/洋蔥圈<br>小雞球
-                                            <br><br>湯品：每日濃湯<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小肉圓湯
+                                            <br><br>湯品：每日濃湯<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小肉圓湯
                                         </h3>
                                         <div class="menu_txt">
                                         </div>
@@ -2611,7 +2624,7 @@
                         <div class="first_img"></div>
                         <div class="mask">
                             <div class="mask_title">親子育兒</div>
-                            <div class="mask_text">親子育兒-精挑細選．育兒生活好好玩</div>
+                            <div class="mask_text">精挑細選．育兒生活好好玩</div>
                         </div>
                     </div>
                 </div>
