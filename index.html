@@ -581,6 +581,16 @@
             margin-left: 4px;
         }
 
+        .meal {
+            position: absolute;
+            right: 61px;
+            top: 13.5px;
+            font-size: 25px;
+            border-style: solid;
+            border-width: 1px;
+            display: none;
+        }
+
         .eating_img {
             background-repeat: no-repeat;
             background-size: contain;
@@ -1149,6 +1159,10 @@
                 font-size: 40px;
             }
 
+            .meal {
+                display: block;
+            }
+
             .zero {
                 font-size: 40px;
             }
@@ -1283,6 +1297,17 @@
 
         /* 以下是平板版 */
         @media (max-width: 910px) {
+            /* 以下是好食框框 */
+            .meal {
+                right: 333px;
+                font-size: 20px;
+                top: 8px;
+            }
+            /* 以上是好食框框 */
+            
+            .zero {
+                font-size: 30px;
+            }
 
             body {
                 padding-top: 57px;
@@ -1679,13 +1704,13 @@
             }
 
             .cherish {
-                left: calc(50% - 150px);
+                left: calc(50% - 110px);
                 top: 50px;
                 font-size: 40px;
             }
 
             .cherish01 {
-                font-size: 20px;
+                font-size: 15px;
                 margin-top: 5px;
             }
 
@@ -1752,7 +1777,7 @@
             .grasp {
                 font-size: 15px;
                 margin-left: 160px;
-                margin-top: -26px;
+                margin-top: -29px;
             }
 
             .news01 {
@@ -1838,6 +1863,11 @@
 
         /* 以下是手機板 */
         @media (max-width: 670px) {
+
+            .meal {
+                display: none;
+            }
+
             body {
                 padding-top: 50px;
             }
@@ -2432,12 +2462,6 @@
                 font-size: 12px;
             }
         }
-
-        .aaaa {
-            position: absolute;
-            right: 0px;
-            top: 0px;
-        }
     </style>
 </head>
 
@@ -2606,7 +2630,9 @@
                 </div>
 
                 <div class="swiper-father">
-                    <div class="food_title wow fadeInUp">相識ㆍ款待 <div class="aaaa">cccc <style></style></div></div>
+                    <div class="food_title wow fadeInUp">相識ㆍ款待 <div class="meal">好食 <style></style>
+                        </div>
+                    </div>
                     <div class="swiper-container SwiperA swiper-a wow fadeInUp">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide ">
@@ -2657,7 +2683,7 @@
                                         <div class="dishes">點心/湯品</div>
                                         <h3 class="menu menue01">
                                             波浪脆薯<br>洋蔥圈<br>小雞球
-                                            <br><br>每日濃湯<br>小肉圓湯
+                                            <br><br>小肉圓湯
                                         </h3>
                                         <div class="menu_txt">
                                         </div>
